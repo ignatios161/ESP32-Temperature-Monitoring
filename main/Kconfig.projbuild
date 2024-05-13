@@ -1,0 +1,23 @@
+menu "Project Configuration"
+
+config WIFI_SSID
+    string "WiFi SSID"
+    default "Igko"
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+    default "11111111"
+
+config MQTT_BROKER_URI
+    string "MQTT Broker URI"
+    default "mqtt://broker.hivemq.com"
+
+config MQTT_COMMAND_TOPIC
+    string "MQTT Command Topic"
+    default "org/sdu/2024/iot/ignatiosmantanis/command"
+
+config MQTT_RESPONSE_TOPIC
+    string "MQTT Response Topic"
+    default "org/sdu/2024/iot/ignatiosmantanis/response"
+
+endmenu

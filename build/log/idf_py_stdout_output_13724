@@ -1,0 +1,119 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15532
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time May 12 2024 19:19:13[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28194h (164244) map[0m
+[0;32mI (159) esp_image: segment 1: paddr=000381bc vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=000381c8 vaddr=3ffb0000 size=03c04h ( 15364) load[0m
+[0;32mI (170) esp_image: segment 3: paddr=0003bdd4 vaddr=40080000 size=04244h ( 16964) load[0m
+[0;32mI (180) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a1068h (659560) map[0m
+[0;32mI (407) esp_image: segment 5: paddr=000e1090 vaddr=40084244 size=1243ch ( 74812) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
+[0;32mI (469) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (469) cpu_start: Application information:[0m
+[0;32mI (472) cpu_start: Project name:     hello_world[0m
+[0;32mI (477) cpu_start: App version:      1[0m
+[0;32mI (481) cpu_start: Compile time:     May 12 2024 19:19:02[0m
+[0;32mI (487) cpu_start: ELF file SHA256:  a9146b373...[0m
+[0;32mI (493) cpu_start: ESP-IDF:          v5.2[0m
+[0;32mI (497) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (502) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (507) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (512) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFB8338 len 00027CC8 (159 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 40096680 len 00009980 (38 KiB): IRAM[0m
+[0;32mI (552) spi_flash: detected chip: generic[0m
+[0;32mI (555) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+I (623) wifi:wifi driver task: 3ffc03d8, prio:23, stack:6656, core=0
+I (643) wifi:wifi firmware version: cc1dd81
+I (643) wifi:wifi certification version: v7.0
+I (643) wifi:config NVS flash: enabled
+I (643) wifi:config nano formating: disabled
+I (643) wifi:Init data frame dynamic rx buffer num: 32
+I (653) wifi:Init static rx mgmt buffer num: 5
+I (653) wifi:Init management short buffer num: 32
+I (653) wifi:Init dynamic tx buffer num: 32
+I (663) wifi:Init static rx buffer size: 1600
+I (663) wifi:Init static rx buffer num: 10
+I (673) wifi:Init dynamic rx buffer num: 32
+[0;32mI (673) wifi_init: rx ba win: 6[0m
+[0;32mI (673) wifi_init: tcpip mbox: 32[0m
+[0;32mI (683) wifi_init: udp mbox: 6[0m
+[0;32mI (683) wifi_init: tcp mbox: 6[0m
+[0;32mI (683) wifi_init: tcp tx win: 5760[0m
+[0;32mI (693) wifi_init: tcp rx win: 5760[0m
+[0;32mI (693) wifi_init: tcp mss: 1440[0m
+[0;32mI (703) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (703) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (713) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (793) wifi:mode : sta (10:97:bd:d4:18:78)
+I (793) wifi:enable tsf
+[0;32mI (10793) wifi_event_handler: Trying to reconnect... (0/5)[0m
+I (10793) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (10803) wifi:state: init -> auth (b0)
+[0;32mI (10803) wifi_event_handler: Event received: Base=WIFI_EVENT, ID=40[0m
+I (10813) wifi:state: auth -> assoc (0)
+I (11813) wifi:state: assoc -> init (2700)
+I (11813) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (11813) wifi_event_handler: Event received: Base=WIFI_EVENT, ID=5[0m
+[0;32mI (11813) wifi_event_handler: Disconnected from WiFi, trying to reconnect...[0m
+[0;32mI (14243) wifi_event_handler: Event received: Base=WIFI_EVENT, ID=5[0m
+[0;32mI (14243) wifi_event_handler: Disconnected from WiFi, trying to reconnect...[0m
+I (14253) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (14253) wifi:state: init -> auth (b0)
+I (14263) wifi:state: auth -> assoc (0)
+I (14273) wifi:state: assoc -> run (10)
+I (14293) wifi:connected with Igko, aid = 1, channel 11, BW20, bssid = ce:f4:c1:d3:8a:7d
+I (14293) wifi:security: WPA2-PSK, phy: bgn, rssi: -5
+I (14303) wifi:pm start, type: 1
+
+I (14303) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[0;32mI (14313) wifi_event_handler: Event received: Base=WIFI_EVENT, ID=4[0m
+I (14383) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (14383) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (15313) esp_netif_handlers: sta ip: 192.168.43.200, mask: 255.255.255.0, gw: 192.168.43.79[0m
+[0;32mI (15313) wifi_event_handler: Event received: Base=IP_EVENT, ID=0[0m
+[0;32mI (15313) wifi_event_handler: Got IP: 192.168.43.200[0m
+[0;32mI (15323) main_task: Returned from app_main()[0m
+[0;32mI (17153) MQTT_CLIENT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (17363) MQTT_CLIENT: MQTT_EVENT_SUBSCRIBED[0m
+[0;32mI (22683) MQTT_CLIENT: MQTT_EVENT_DATA: Topic=org/sdu/2024/iot/ignatiosmantanis/command, Data=measure:3,1000[0m
+[0;32mI (22683) MQTT_CLIENT: Received measurement command: 3 measurements, 1000 ms interval[0m
+[0;32mI (22693) MQTT_CLIENT: Measurement count: 3[0m
+[0;32mI (22703) MQTT_CLIENT: Publishing temperature: 2,-3.59,22147[0m
+I (22883) wifi:<ba-add>idx:0 (ifx:0, ce:f4:c1:d3:8a:7d), tid:0, ssn:16, winSize:64
+[0;32mI (23703) MQTT_CLIENT: Measurement count: 2[0m
+[0;32mI (23703) MQTT_CLIENT: Publishing temperature: 1,-3.13,23147[0m
+[0;32mI (24703) MQTT_CLIENT: Measurement count: 1[0m
+[0;32mI (24703) MQTT_CLIENT: Publishing temperature: 0,-3.50,24147[0m
+[0;32mI (25703) MQTT_CLIENT: No more measurements needed.[0m
